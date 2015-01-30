@@ -1,0 +1,41 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>Guess The Number</h1>
+</div>
+<section id="gameField">
+    <div class="row">
+        <div class="col-md-5">
+            <h2>Game status</h2>
+            <p id="gameStatus"></p>
+        </div>
+        <div class="col-md-3">
+            <h2>Guess the Number</h2>
+            <div class="input-group">
+                <input type="text" class="form-control" id="guessNumberInput">
+                <span class="input-group-btn">
+                    <button class="btn btn-default" type="button" id="guessButton">Guess!</button>
+                </span>
+            </div>
+            <p id="userResult"></p>
+        </div>
+        <div class="col-md-3 col-md-offset-1">
+            <h2>Start new Game</h2>
+            <div class="input-group">
+                <input type="text" class="form-control" id="startGameInput">
+                <span class="input-group-btn">
+                    <button class="btn btn-default" type="button" id="newGameButton">New Game!</button>
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <button class="btn btn-default" type="button" id="showHistory">Show History!</button>
+            <p id="history"></p>
+        </div>
+    </div>
+</section>
